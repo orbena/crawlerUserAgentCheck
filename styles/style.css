@@ -13,6 +13,9 @@ header {
     font-weight: bold;
 }
 
+.box{
+    margin-top: 40px;
+}
 .headerlogo {
     float: left;
     width: 2.5rem;
@@ -61,39 +64,69 @@ nav ul li {
 .navlink.active {
 }
 
-.addtocartbutton {
-    cursor: pointer;
-    padding: 4px 25px;
-    background: #603813;
-    border: 1px solid #381f09;
-    /*-moz-border-radius: 8px;*/
-    /*-webkit-border-radius: 8px;*/
-    border-radius: 8px;
-    /*-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);*/
-    /*-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);*/
-    box-shadow: 0 0 4px rgba(0,0,0, .75);
-    color: #f3f3f3;
-    font-size: 0.8em;
-    width: 80px;
-}
-
-.addtocartbutton:hover, .addtocartbutton:focus {
-    background-color: #512c0a;
-    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
-    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
-    box-shadow: 0 0 1px rgba(0,0,0, .75);
-}
 
 .backgroundgradient {
     background: linear-gradient(to right, #603813, #341c05);
 }
-.searchbox {
-    float: right;
-    padding: 5px;
-    margin: 10px 10px;
-    width: 200px;
+/*button start*/
+#submitbutton {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    display: inline-block;
+    border-radius: 70px;
+    background-color: #154c91;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 23px;
+    padding: 0;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 auto;
 }
 
+#submitbutton {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#submitbutton:hover{
+    padding-right: 25px;
+    background-color: #253a7a;
+}
+
+#submitbutton:active{
+    padding-right: 25px;
+    background-color: #154c91;
+}
+
+/*button end*/
+
+.results {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 23px;
+    display: inline-block;
+    margin: 10px 0 0 0;
+}
+.resultsHeader {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 23px;
+    display: inline-block;
+
+}
+.resultsBody {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 23px;
+    display: inline-block;
+}
 #headername {
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 45px;
@@ -239,7 +272,7 @@ footer {
 }
 
 
-/*All coffees page styles*/
+/*All  page styles*/
 .blockheader {
     font-size: 30px;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
