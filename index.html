@@ -44,7 +44,7 @@
     <!--</nav>-->
 </header>
 
-<section class="coffeedetails">
+<section class="details">
     <form id="mainForm" action="#" method="post">
         <fieldset class="box">
             <legend>Details</legend>
@@ -57,15 +57,27 @@
                            pattern="https://.*"
                            size="150"/>
                 </p>
-
+                <!--The <datalist> element is not supported in Internet Explorer 9 (and earlier versions), or Safari.-->
                 <datalist id="userAgentList">
-                    <option value="UA-1">
-                    <option value="UA-2">
-                    <option value="UA-3">
-                    <option value="UA-4">
-                    <option value="UA-5">
+                    <option value="Mozilla/5.0 (compatible; Taboolabot/3.7; +http://www.taboola.com)">
+                    <option value="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36">
+                    <option value="Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36">
+                    <option value="Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329">
                 </datalist>
 
+                <!--START For the drop down menu support in Safari-->
+                <!--<p>-->
+                <!--<datalist id="userAgentList">-->
+                    <!--<label for="suggestion">Pick a User Agent</label>-->
+                    <!--<select id="suggestion" name="altUA">-->
+                        <!--<option value="Mozilla/5.0 (compatible; Taboolabot/3.7; +http://www.taboola.com)" >Taboolabot (Default Crawler User Agent)</option>-->
+                        <!--<option value="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</option>-->
+                        <!--<option value="Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36">Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36</option>-->
+                        <!--<option value="Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329">Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329</option>-->
+                    <!--</select>-->
+                <!--</datalist>-->
+                <!--</p>-->
+                <!--&lt;!&ndash;END For the drop down menu support in Safari&ndash;&gt;-->
                 <p>
                     <label class="textlabel" for="userAgentInput">User Agent</label>
                     <input id="userAgentInput" class="textinput" name="userAgentInput" type="text" required="required"
@@ -76,47 +88,43 @@
 
             </div>
         </fieldset>
+
         <br />
-        <!--<fieldset class="box">-->
-            <!--<legend>Your order</legend>-->
-            <!--<div>-->
-                <!--<p>-->
-                    <!--<label class="textlabel" for="deliveryDateInput">Requested delivery date</label>-->
-                    <!--<input id="deliveryDateInput" name="BirthDate" class="textinput"-->
-                           <!--type="date" placeholder="Enter a date" />-->
-                <!--</p>-->
-                <!--<p>-->
-                    <!--<label class="textlabel" for="colorInput">Wrapping paper color</label>-->
-                    <!--<input id="colorInput" name="Color" type="color" class="textinput"-->
-                           <!--placeholder="Select a color" />-->
-                <!--</p>-->
-                <!--<p>-->
-                    <!--<label class="textlabel" for="bowInput">How many bows on the package?</label>-->
-                    <!--<input id="bowInput" name="Bows" type="number" class="textinput"-->
-                           <!--required="required" placeholder="Enter a number" max="10" min="1" />-->
-                <!--</p>-->
-            <!--</div>-->
-        <!--</fieldset>-->
+
+        <span class="buttonWrapper">
         <input type="submit" id="submitbutton" value="Run Check" />
+        </span>
+
     </form>
 </section>
 
 <br>
 
+<footer>
 <section class="results">
-<div class="resultsHeader">
-    <span>Results</span>
-</div>
 
-<div class="resultsBody">
-    <!--<ul>-->
-    <!--<li><a class="navlink" href="index.html">Home</a></li>-->
-    <!--</ul>-->
-</div>
+    <div class="resultsHeader">
+        <span>Results:</span>
+    </div>
+
+    <div class="resultsBody">
+        <ul>
+            <li>
+                response 1
+            </li>
+            <li>
+                response 2
+            </li>
+            <li>
+                response 3
+            </li>
+        </ul>
+    </div>
 
 
 
 </section>
+</footer>
 
 </body>
 <script src="scripts/runCheck.js"></script>

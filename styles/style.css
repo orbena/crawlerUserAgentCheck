@@ -1,5 +1,5 @@
 body {
-    width: 1000px;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -13,6 +13,10 @@ header {
     font-weight: bold;
 }
 
+.details {
+    width: 100%;
+}
+
 .box{
     margin-top: 40px;
 }
@@ -22,52 +26,18 @@ header {
     height: 2.5rem;
     left: 20px;
     display: block;
-    padding-right: 15px;
+    padding: 5px 15px 0 0;
 }
 
 .headerlogo > svg {
-    height: 60px;
-    width: 60px;
-}
-
-#mainHeader {
-    height:80px;
-}
-
-nav {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    padding-left: 5px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: block;
-}
-
-.navlink {
-    height: 35px;
-    margin-right: 10px;
-    font-size: 18px;
-    float: left;
-    padding-top: 12px;
-    color: white;
-    text-decoration: none;
-}
-
-.navlink.active {
+    height: auto;
+    width: 4rem;
 }
 
 
-.backgroundgradient {
-    background: linear-gradient(to right, #603813, #341c05);
-}
+/*.backgroundgradient {*/
+    /*background: linear-gradient(to right, #603813, #341c05);*/
+/*}*/
 /*button start*/
 #submitbutton {
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -85,12 +55,12 @@ nav ul li {
     margin: 0 auto;
 }
 
-#submitbutton {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
+/*#submitbutton {*/
+    /*cursor: pointer;*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*transition: 0.5s;*/
+/*}*/
 
 #submitbutton:hover{
     padding-right: 25px;
@@ -104,29 +74,6 @@ nav ul li {
 
 /*button end*/
 
-.results {
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #000000;
-    text-align: center;
-    font-size: 23px;
-    display: inline-block;
-    margin: 10px 0 0 0;
-}
-.resultsHeader {
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #000000;
-    text-align: center;
-    font-size: 23px;
-    display: inline-block;
-
-}
-.resultsBody {
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #000000;
-    text-align: center;
-    font-size: 23px;
-    display: inline-block;
-}
 #headername {
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 45px;
@@ -134,229 +81,68 @@ nav ul li {
     padding: 15px;
     margin: 8px 0;
     font-weight: 700;
-    /*text-shadow: 5px 5px 5px #5f2c17;*/
-}
-
-#welcomeimage {
-    float: left;
-    width: 700px;
-}
-
-#coffeeofthemonth {
-    float: right;
-    width: 300px;
-}
-
-#welcometext {
-    float: left;
-    width: 70%;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    -webkit-column-count: 2;
-    column-count: 2;
-}
-
-#welcometext > header {
-    color: #603813;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 3px;
-}
-
-#events {
-    float: right;
-    width: 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#events > header {
-    margin-left: 10px;
-    color: #603813;
-    font-size: 15px;
-    margin-bottom: 3px;
-    font-weight: bold;
-}
-
-#events > ul {
-    list-style: none;
-}
-
-#events > ul > li {
-    margin-bottom: 3px;
-}
-
-#bestsellers {
-    height: 100%;
-    width: 700px;
-    float: left;
-    margin-bottom: 20px;
-}
-
-#bestsellers > header {
-    color: #603813;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.coffeebestsellers {
-    float: left;
-}
-
-.coffeebestsellers > header {
-    background-color: #603813;
-    color: white;
-    padding-left: 10px;
-}
-
-.accessoriesbestsellers {
-    clear: both;
-}
-
-.accessoriesbestsellers > header {
-    height: 30px;
-    line-height: 30px;
-    background-color: #603813;
-    color: white;
-    padding-left: 10px;
 }
 
 .textinput {
     display: block;
     margin-top: 2px;
 }
-
-.productarticle {
-    width: 200px;
-    float: left;
-    margin-left: 25px;
-    margin-bottom: 10px;
+span.buttonWrapper {
+    margin: 0 0 14px 0;
+    display: block;
 }
 
-.productarticlethumbnail {
-    width: 100px;
-    height: 150px;
-}
-
-.productarticlename {
-    font-size: 15px;
-    color: #603813;
-    font-weight: bold;
-}
-
-.productarticleprice {
-    font-size: 15px;
-    color: green;
-    font-weight: bold;
-    padding-top: 15px;
-}
-
-.productarticlemoreinfo {
-    font-size: 12px;
-    color: #603813;
-    margin-top: 5px;
-}
-
-footer {
+section.results {
     clear: both;
-    width: 100%;
-    background-color: #5c5045;
-    margin: 20px 0 20px;
+    border: 2px groove threedface;
+    /*margin: 20px 0 20px;*/
     padding: 5px;
     /*transform: rotate(10deg);*/
 }
-
-.smalltext {
-    font-size: 10px;
-}
-
-
-/*All  page styles*/
-.blockheader {
-    font-size: 30px;
+.results {
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    color: #000000;
+    font-size: 23px;
+    display: block;
+    margin: 10px 0 0 0;
+    width: inherit;
+}
+.resultsHeader {
+    border-bottom: 2px solid #4472c4;
+    color: #000000;
+    display: block;
+
+}
+.resultsBody {
+    background-color: #f5f4f4;
+    color: black;
+    font-size: 18px;
+    display: grid;
+    /*height: fit-content;*/
 }
 
-.productarticlewide {
-    width: 100%;
+
+ul {
+    padding: 0;
+    height: auto;
+    margin: 0.4em 0;
+}
+
+ul > li {
+    display: block;
+    padding: 5px 0 5px 4px;
+    border: 1px solid black;
+    margin: 4px 4px 0 4px;
+}
+
+
+.navlink {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    height: auto;
+    width: 95%;
+    font-size: 18px;
     float: left;
-}
-
-.productarticlewidethumbnail {
-    width: 100px;
-    height: 150px;
-    float: left;
-    margin: 20px;
-}
-
-.productarticlewidecontent {
-    width: 80%;
-    float: right;
-}
-
-.productarticlewidedescription {
-    text-wrap: normal;
-}
-
-.productarticlewidename {
-    font-size: 15px;
-    color: #603813;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.productarticlewideprice {
-    font-size: 15px;
-    color: green;
-    font-weight: bold;
-    padding-top: 15px;
-}
-
-.allcoffees {
-    float: left;
-    width: 750px;
-}
-
-#shoppingcart {
-    float: left;
-    width: 175px;
-}
-
-/*Coffee detail page*/
-
-.coffeedetails {
-    float: left;
-    width: 1000px;
-}
-
-.productarticlelargeimage {
-    width: 200px;
-    height: 300px;
-
-}
-
-.productarticlelargefigure {
-
-    float: left;
-    margin: 10px;
-}
-
-.productarticlecontent {
-    width:75%;
-    float: right;
-}
-
-.productarticledescription {
-    text-wrap: normal;
-}
-
-.productarticleprice {
-    font-size: 25px;
-    color: green;
-    font-weight: bold;
-    padding-top: 15px;
+    color: black;
+    text-decoration: none;
 }
 
